@@ -1,0 +1,25 @@
+{
+  "name": "cppsim-par-lang",
+  "displayName": "cppsim par lang",
+  "description": "Syntax highlighting for cppsim .par file",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "par",
+      "aliases": ["cppsim par", "par"],
+      "extensions": [".par"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "par",
+      "scopeName": "source.par",
+      "path": "./syntaxes/par.tmLanguage.json"
+    }]
+  }
+}
